@@ -36,6 +36,7 @@ async def on_message(message):
 
         for links in found_links:
             okay_links.append(links)
+            await message.channel.send("Link Adicionado com Sucesso!")
 
     if re.search(url_pattern, message.content):
         found_links = re.findall(url_pattern, message.content)
@@ -44,6 +45,7 @@ async def on_message(message):
             for domain in okay_links:
                 if not link.startswith(domain):
                     await message.delete()
+                    await message.channel.send('Link Proibido, para adicionar um link use o comando $add')
 
 client.run(token)
 
