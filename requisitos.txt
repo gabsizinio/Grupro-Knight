@@ -1,3 +1,0 @@
-1 - Digitar os Sites permitidos, e o bot adicionar em uma lista de sites permitidos
-2 - Se alguém passar um link de um site que não é permitido, bloquear a mensagem
-3 - Avisar que a mensagem foi bloqueada
